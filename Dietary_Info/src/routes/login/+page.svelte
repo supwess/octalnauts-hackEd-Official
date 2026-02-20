@@ -22,7 +22,7 @@
 </header>
 
 <body class="bg-primary-dark h-fit overflow-hidden">
-    <div class="flex justify-center mt-[10%] h-svh">
+    <div class="flex justify-center items-center h-svh">
         <form class="w-2/3 text-primary-bright">
             <div>
                 <h1 class="text-center text-4xl"><b>Log In</b></h1>
