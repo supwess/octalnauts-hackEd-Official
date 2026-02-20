@@ -3,20 +3,28 @@
 </script>
 
 <body class="bg-primary-dark">
-    <div class="flex justify-center align-middle items-center mx-auto place-items-center h-screen">
-        <form class="">
-            <div class="text-primary-bright">
-                <label>Email: </label>
-                <input type="email" required class="bg-secondary-dark rounded-lg border-solid outline-secondary-light outline-3 p-3 w-full overflow-hidden">
-
-                <br><br>
-
-                <label>Password: </label>
-                <input type="password" required>
-            </div>
-            <br>
+    <div class="flex justify-center items-center h-screen">
+        <form class="w-1/3 text-primary-bright">
             <div>
-                <button class="text-primary-bright justify-center">Login</button>
+                <label>Email:</label><br>
+                <input type="email" required 
+                    class="w-full bg-secondary-dark rounded-lg outline outline-3 outline-secondary-light p-3 mt-3">
+            </div>
+
+            <br>
+
+            <div>
+                <label>Password:</label><br>
+                <input type="password" required 
+                    class="w-full bg-secondary-dark rounded-lg outline outline-3 outline-secondary-light p-3 mt-3">
+            </div>
+
+            <br>
+
+            <div class="justify-end flex">
+                <button class="w-1/3 text-primary-bright bg-secondary-dark rounded-xl p-2">
+                    Login
+                </button>
             </div>
         </form>
     </div>
