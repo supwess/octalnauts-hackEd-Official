@@ -10,7 +10,7 @@
         window.location.href = '/login';
     }
     function goGuest(){
-        alert("Continuing as Guest");
+        alert("Continuing as Guest\nData will not be saved");
     }
 </script>
 
