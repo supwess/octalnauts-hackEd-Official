@@ -21,9 +21,9 @@
     
 </header>
 
-<body class="bg-primary-dark">
-    <div class="flex justify-center items-center h-screen">
-        <form class="w-1/3 text-primary-bright">
+<body class="bg-primary-dark h-fit overflow-hidden">
+    <div class="flex justify-center mt-[10%] h-svh">
+        <form class="w-2/3 text-primary-bright">
             <div>
                 <h1 class="text-center text-4xl"><b>Log In</b></h1>
             </div>
@@ -35,19 +35,6 @@
                 <input type="email" required placeholder="Enter Email"
                     class="w-full bg-secondary-dark rounded-lg outline-2 outline-secondary-light p-3 mt-2 invalid:text-pink-600 invalid:outline-pink-500">
             </div>
-        </form>
-    </div>
-</body>
-
-
-<body class="bg-primary-dark h-fit overflow-hidden">
-    <div class="flex justify-center items-center h-svh">
-        <form class="w-2/3 text-primary-bright w-min-50">
-            <div>
-                <label>Email:</label><br>
-                <input type="email" required 
-                    class="w-full bg-secondary-dark rounded-lg outline-3 outline-secondary-light p-3 mt-3">
-            </div>
 
             <br>
 
@@ -55,9 +42,6 @@
                 <label><b>Password</b></label><br>
                 <input type="password" required placeholder="Enter Password"
                     class="w-full bg-secondary-dark rounded-lg outline-2 outline-secondary-light p-3 mt-2">
-                <label>Password:</label><br>
-                <input type="password" required 
-                    class="w-full bg-secondary-dark rounded-lg outline-3 outline-secondary-light p-3 mt-3">
             </div>
 
             <br>
@@ -75,8 +59,8 @@
             </div>
         </form>
     </div>
-    
 </body>
+
 
 <footer>
     <div>
