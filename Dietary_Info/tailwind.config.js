@@ -1,0 +1,10 @@
+module.exports = {
+    content: ["./src/**/*.{html,js,svelte}"],
+    theme: {
+        extend: {},
+    },
+    plugins: {
+        autoprefixer: {}, 
+        '@tailwindcss/postcss': {}
+    }
+}
