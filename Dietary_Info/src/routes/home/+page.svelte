@@ -11,6 +11,7 @@
     }
     function goGuest(){
         alert("Continuing as Guest\nData will not be saved");
+        window.location.href = '/add_restrictions';
     }
 </script>
 
