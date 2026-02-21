@@ -2,15 +2,15 @@
 	import { NavbarMenu, MenuItem, ProductItem } from '$lib/components/ui/NavbarMenu';
 	let active: string | null = null;
 
-	let children = $props();
+	let { children } = $props();
 
 	const menuItems: MenuItem[] = [
 		{ name: 'Account', href: '/account' },
 		{ name: 'Home', href: '/home' },
-		{ name: 'Goals', href: '/goals' },
+		{ name: 'Goals', href: '/add_restrictions' },
 		{ name: 'About', href: '/about' }
 	];
-
+	import "../../app.css"
 </script>
 
 <section class="relative flex w-full justify-evenly">

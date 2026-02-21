@@ -7,7 +7,7 @@
 	const menuItems: MenuItem[] = [
 		{ name: 'Dashboard', href: '/dashboard' },
 		{ name: 'Home', href: '/home' },
-		{ name: 'Goals', href: '/add_restrictions' },
+		{ name: 'About', href: '/about' },
 		{ name: 'Account', href: '/login' }
 	];
 

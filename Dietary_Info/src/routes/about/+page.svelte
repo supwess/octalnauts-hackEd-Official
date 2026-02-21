@@ -3,12 +3,12 @@
 
     import "../../app.css"
 
-
 </script>
 <title>About Us</title>
+
 <body>
     <main class="min-h-screen bg-primary-dark">
-        <div class="text-center py-8">
+        <div class="text-center py-5">
             <p class="text-4xl text-primary-bright"><b>About Us</b></p>
         </div>
         <div class='img-placeholder'>
