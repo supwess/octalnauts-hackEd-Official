@@ -1,87 +1,65 @@
-<h1>
-    Dietary Info
-</h1>
-<p>
-    Track your allegries and dietary restrictions
-</p>
-
 <script>
-    function goLoginPage(){
+    import "../../app.css"
+
+    function goLoginPage() {
         window.location.href = '/login';
     }
-    function goGuest(){
-        alert("Continuing as Guest\nData will not be saved");
+
+    function goGuestPage() {
+        window.location.href = '/dashboard';
     }
 </script>
 
-<div class="card">
-    <div class="buttons">
-        <button class="loginButton"
-            on:click={goLoginPage}>
-        </button>
-        <button class="guestButton"
-            on:click={goGuest}>
-        </button>
-    </div>
+<div class="min-h-screen flex flex-col">
+<header>
+    <a href="/home">
+        <div class="ml-0 mt-0 w-full h-1/15 bg-secondary-dark">
+            <div class="bg-secondary-dark w-1/4 pl-5 pt-3 pb-3">
+                <h1 class="text-primary-bright text-3xl">
+                    <b>PROJECT<br>OCTALNAUTS</b>
+                </h1>
+            </div>
+        </div>
+    </a>
+    
+</header>
+
+<main class="overflow-hidden bg-primary-dark flex-1">
+        <div class="text-center py-8">
+            <h1 class="text-[6rem] text-primary-bright"><b>Dietary Info</b></h1>
+        </div>
+        <div class="text-center">
+            <p class="text-xl text-primary-light"><b>Track your allergies and dietary restrictions</b></p>
+        </div>
+
+        <div class="pt-10">
+            <div class="flex items-center justify-center gap-10 mt-10">
+                <div>
+                    <button class="rounded-2xl gimages w-[10rem] h-[10rem] bg-cover" on:click={goGuestPage}></button>
+                </div>
+                <div>
+                    <button class="rounded-2xl w-[10rem] h-[10rem] loginB bg-cover" on:click={goLoginPage}></button>
+                </div>
+            </div>
+        </div>
+</main>
+
 </div>
 
 <style>
-    :global(body){
-        background: linear-gradient(160deg, #0d1b2a, #1b263b);
-        margin: 0;
-        font-family: sans-serif;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-       /* cursor: url('/images/apple.jpg'), auto; */
+    .gimages {
+        background-image: url("/images/guest.jpg");
     }
-    h1{
-        color: #e0e1dd;
-        text-align: center;
-        font-size: 6rem;
-        margin-top: 7rem;
+
+    .gimages:hover {
+        background-image: url("/images/guest2.jpg");
     }
-    p{
-        color: #778da9;
-        margin: 0 0 2.5rem 0;   /*top, right, bottom, left*/
+
+    .loginB {
+        background-image: url("/images/login.jpg");
     }
-    .card{
-        background: #1b263b;
-        border: 1px solid #415a77;
-        border-radius: 20px;
-        padding: 3rem;
-    }
-    .buttons{
-        display: flex;
-        justify-content: center;
-        gap: 2rem;
-        margin-top: 0rem;
-    }
-    button{
-        width: 10rem;
-        height: 10rem;
-        background-size: cover;       /*cover whole button*/
-        background-position: center;  /*center image*/
-        border-radius: 8px;           /*rounded corners*/
-        border: 2px solid #415a77;
-        cursor: pointer;
-        transition: transform 0.2s ease;
-    }
-    button:hover{
-        transform: translateY(-4px);
-        border-color: #778da9;
-    }
-    .loginButton{
-        background-image: url('/images/login.jpg');
-    }
-    .loginButton:hover{
-        background-image: url('/images/login2.jpg');
-    }
-    .guestButton{
-        background-image: url('/images/guest.jpg');
-    }
-    .guestButton:hover{
-        background-image: url('/images/guest2.jpg');
+
+    .loginB:hover {
+        background-image: url("/images/login2.jpg");
     }
 </style>
