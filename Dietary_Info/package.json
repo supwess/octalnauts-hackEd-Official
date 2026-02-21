@@ -42,7 +42,7 @@
 		"vite-plugin-devtools-json": "^1.0.0"
 	},
 	"dependencies": {
-		"@openfoodfacts/openfoodfacts-nodejs": "github:openfoodfacts/openfoodfacts-js",
+		"@openfoodfacts/openfoodfacts-nodejs": "^2.0.0-alpha.29",
 		"better-sqlite3": "^12.6.2",
 		"clsx": "^2.1.1",
 		"flowbite-svelte": "^1.31.0",
