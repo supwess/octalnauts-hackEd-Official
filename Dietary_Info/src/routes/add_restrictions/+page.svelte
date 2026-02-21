@@ -1,19 +1,43 @@
 <script>
-	import { form } from "$app/server";
-
     import "../../app.css"
-
-
 </script>
 
-<title>Enter Dietary Restrictions</title>
+<div class="bg-primary-dark h-fit overflow-hidden">
+    <div class="flex justify-center items-center h-svh">
+        <form method="POST" class="w-2/3 text-primary-bright">
+            <div>
+                <h1 class="text-center text-4xl"><b>Enter Dietary Restrictions</b></h1>
+                <p class="text-center">one food at a time please</p>
+            </div>
 
-<header>
-    <a href="/home">
-        <div class="w-full bg-secondary-dark pl-5 py-3">
-            <h1 class="text-primary-bright text-3xl">
-                <b>PROJECT<br>OCTALNAUTS</b>
-            </h1>
-        </div>
-    </a>
-</header>
+            <br>
+                <div>
+                    <label><b>Restricted Foods</b></label><br>
+                    <input type="text" placeholder="Enter food restriction" name="food_name"
+                        class="w-full bg-secondary-dark rounded-lg outline-2 outline-secondary-light p-3 mt-2">
+                </div>
+            <br>
+
+            <div class="justify-end flex">
+                <button type="submit" class="w-2/5 text-primary-bright bg-secondary-dark rounded-xl p-2 hover:bg-secondary-light hover:cursor-pointer transition-all duration-150 mt-3" >
+                    Enter
+                </button>
+            </div>
+
+            <br>
+                <div>
+                    <label><b>Allergies</b></label><br>
+                    <input type="text" placeholder="Enter allergy restriction" name="allergy_name"
+                        class="w-full bg-secondary-dark rounded-lg outline-2 outline-secondary-light p-3 mt-2">
+                </div>
+            <br>
+
+            <div class="justify-end flex">
+                <button type="submit" class="w-2/5 text-primary-bright bg-secondary-dark rounded-xl p-2 hover:bg-secondary-light hover:cursor-pointer transition-all duration-150 mt-3" >
+                    Enter
+                </button>
+            </div>
+
+        </form>
+    </div>
+</div>

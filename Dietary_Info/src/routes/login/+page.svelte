@@ -3,8 +3,6 @@
     import "../../app.css"
 </script>
 
-<title>Log In</title>
-
 <div class="bg-primary-dark h-fit overflow-hidden">
     <div class="flex justify-center items-center h-svh">
         <form method="POST" class="w-2/3 text-primary-bright">
