@@ -1,14 +1,8 @@
 <script>
-	import { form } from "$app/server";
-
+	export let form;
     import "../../app.css"
-
-
 </script>
-
-<title>Sign Up</title>
-
-<body class="bg-primary-dark h-fit overflow-hidden">
+<div class="bg-primary-dark h-fit overflow-hidden">
     <div class="flex justify-center items-center h-svh">
         <form method="POST" class="w-2/3 text-primary-bright">
             <div>
@@ -41,6 +35,9 @@
 
             <br>
 
+            {#if form?.error}
+                <p class="text-pink-600 text-center">{form.error}</p>
+            {/if}
             <div class="justify-end flex">
                 <button type="submit" class="w-2/5 text-primary-bright bg-secondary-dark rounded-xl p-2 hover:bg-secondary-light hover:cursor-pointer transition-all duration-150 mt-3" >
                     Sign up
@@ -54,17 +51,4 @@
             </div>
         </form>
     </div>
-</body>
-
-
-<footer>
-    <div>
-        <p>
-            Copyright Team 
-        </p>
-    </div>
-</footer>
-
-<h1>
-    Login page
-</h1>
+</div>
