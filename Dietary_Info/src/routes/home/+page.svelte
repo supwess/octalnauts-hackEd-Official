@@ -8,7 +8,6 @@
   }
 </script>
 
-<!-- The wrapper acts as the new "body" for this page -->
 <div class="page-wrapper">
   <h1> Dietary Info </h1>
   <p> Track your allegries and dietary restrictions </p>
@@ -22,17 +21,12 @@
 </div>
 
 <style>
-  /* 
-     This class replicates your original :global(body) styles.
-     position: fixed; inset: 0; forces it to fill the screen
-     like the body tag does, covering any whitespace/margins.
-  */
   .page-wrapper {
     position: fixed;
-    inset: 0; /* Short for top:0; right:0; bottom:0; left:0; */
+    inset: 0;
     width: 100%;
     height: 100%;
-    overflow-y: auto; /* Allows scrolling if screen is too small */
+    overflow-y: auto;
     
     background: linear-gradient(160deg, #0d1b2a, #1b263b);
     font-family: sans-serif;
@@ -40,7 +34,7 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    z-index: 10; /* Ensures it sits on top of other app layouts */
+    z-index: 10;
   }
 
   h1 {
