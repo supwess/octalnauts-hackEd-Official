@@ -6,7 +6,7 @@
 
 </script>
 
-<title>Log In</title>
+<title>Sign Up</title>
 
 <header>
     <a href="/home">
