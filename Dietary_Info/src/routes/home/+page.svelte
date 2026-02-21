@@ -14,7 +14,7 @@
     Home
 </title>
 
-<div class="flex flex-col bg-primary-dark h-fit">
+<div class="flex flex-col bg-primary-dark min-h-screen">
     <main class="overflow-hidden bg-primary-dark flex-1">
         <div class="text-center py-8">
             <h1 class="text-[6rem] text-primary-bright"><b>Dietary Info</b></h1>
