@@ -34,7 +34,7 @@
 		"prettier": "^3.8.1",
 		"prettier-plugin-svelte": "^3.4.1",
 		"prettier-plugin-tailwindcss": "^0.7.2",
-		"svelte": "^5.51.0",
+		"svelte": "^5.53.2",
 		"svelte-check": "^4.3.6",
 		"tailwindcss": "^4.1.18",
 		"typescript": "^5.9.3",
@@ -47,6 +47,7 @@
 		"clsx": "^2.1.1",
 		"flowbite-svelte": "^1.31.0",
 		"flowbite-svelte-icons": "^3.1.0",
+		"motion": "^12.34.3",
 		"svelte-motion": "^0.12.2",
 		"tailwind-merge": "^3.5.0",
 		"vite-plugin-devtools-json": "^1.0.0"
