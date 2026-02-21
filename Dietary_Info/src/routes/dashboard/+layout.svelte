@@ -1,21 +1,28 @@
 <script lang="ts">
-	import { NavbarMenu, HoveredLink, MenuItem, ProductItem } from '$lib/components/ui/NavbarMenu';
+	import { NavbarMenu, MenuItem, ProductItem } from '$lib/components/ui/NavbarMenu';
 	let active: string | null = null;
+
+	let children = $props();
+
+	const menuItems: MenuItem[] = [
+		{ name: 'Account', href: '/account' },
+		{ name: 'Home', href: '/home' },
+		{ name: 'Goals', href: '/goals' },
+		{ name: 'About', href: '/about' }
+	];
+
 </script>
 
-<main class="min-h-screen flex flex-col">
-    <slot />
-</main>
-
-<div>
-	<div class={'fixed inset-x-0 bottom-8 z-50 mx-auto max-w-2xl'}>
-		<NavbarMenu>
-			<a href='/home'><MenuItem {active} item="Home">
-			</MenuItem></a>
-			<a href='/add_restrictions'><MenuItem {active} item="Goals">
-			</MenuItem></a>
-			<a href='/login'><MenuItem {active} item="Account">
-			</MenuItem></a>
-		</NavbarMenu>
+<section class="relative flex w-full justify-evenly">
+	<div class='fixed inset-x-0 bottom-8 w-[50%] bg-transparent-primary shadow-lg rounded-4xl border border-primary-light text-primary-bright overflow-hidden h-[7%] m-auto flex flex-row items-center justify-evenly'>
+		{#each menuItems as menuItem}
+			<a href={menuItem.href}>
+				<div class="flex-1 text-center">
+					{menuItem.name}
+				</div>
+			</a>
+		{/each}
 	</div>
-</div>
+</section>
+
+{@render children()}

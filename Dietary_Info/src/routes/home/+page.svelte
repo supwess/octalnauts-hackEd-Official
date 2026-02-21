@@ -10,8 +10,12 @@
     }
 </script>
 
-<div class="min-h-screen flex flex-col bg-primary-dark">
-    <main class="overflow-hidden bg-primary-dark flex-1 h-14/15">
+<title>
+    Home
+</title>
+
+<div class="flex flex-col bg-primary-dark h-fit">
+    <main class="overflow-hidden bg-primary-dark flex-1">
         <div class="text-center py-8">
             <h1 class="text-[6rem] text-primary-bright"><b>Dietary Info</b></h1>
         </div>
