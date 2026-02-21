@@ -26,7 +26,7 @@
 
 <body class="bg-primary-dark h-fit overflow-hidden">
     <div class="flex justify-center items-center h-svh">
-        <form class="w-2/3 text-primary-bright">
+        <form method="POST" class="w-2/3 text-primary-bright">
             <div>
                 <h1 class="text-center text-4xl"><b>Log In</b></h1>
             </div>
@@ -35,7 +35,7 @@
 
             <div>
                 <label><b>Username or Email</b></label><br>
-                <input type="text" required placeholder="Enter Username or Email"
+                <input type="text" required placeholder="Enter Username or Email" name="username"
                     class="w-full bg-secondary-dark rounded-lg outline-2 outline-secondary-light p-3 mt-2 invalid:text-pink-600 invalid:outline-pink-500">
             </div>
 
@@ -43,14 +43,14 @@
 
             <div>
                 <label><b>Password</b></label><br>
-                <input type="password" required placeholder="Enter Password"
+                <input type="password" required placeholder="Enter Password" name="password"
                     class="w-full bg-secondary-dark rounded-lg outline-2 outline-secondary-light p-3 mt-2">
             </div>
 
             <br>
 
             <div class="justify-end flex">
-                <button class="w-2/5 text-primary-bright bg-secondary-dark rounded-xl p-2 hover:bg-secondary-light hover:cursor-pointer transition-all duration-150 mt-3" >
+                <button type="submit" class="w-2/5 text-primary-bright bg-secondary-dark rounded-xl p-2 hover:bg-secondary-light hover:cursor-pointer transition-all duration-150 mt-3" >
                     Login
                 </button>
             </div>
