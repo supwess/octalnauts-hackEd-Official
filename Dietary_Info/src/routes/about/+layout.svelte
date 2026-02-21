@@ -14,14 +14,14 @@
     <slot />
 </main>
 
-<div class="relative flex w-full items-center justify-center bg-primary-dark">
+<div>
 	<div class={'fixed inset-x-0 bottom-8 z-50 mx-auto max-w-2xl'}>
 		<NavbarMenu>
 			<a href='/dashboard'><MenuItem {active} item="Dashboard">
 			</MenuItem></a>
-			<a href='/login'><MenuItem {active} item="Add Restrictions">
+			<a href='/login'><MenuItem {active} item="Goals">
 			</MenuItem></a>
-			<a href='/login'><MenuItem {active} item="Log out">
+			<a href='/login'><MenuItem {active} item="Account">
 				<!-- <div class="flex flex-col space-y-4 text-sm">
 					<HoveredLink href="#">Hobbies</HoveredLink>
 				</div> -->
