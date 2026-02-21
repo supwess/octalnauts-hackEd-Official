@@ -26,4 +26,3 @@ vite.config.ts.timestamp-*
 package-lock.json
 bun.lock
 users.db
-
