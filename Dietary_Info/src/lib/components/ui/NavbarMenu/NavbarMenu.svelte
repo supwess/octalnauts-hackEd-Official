@@ -1,5 +1,5 @@
 <nav
-	class="boder relative flex justify-center space-x-40 rounded-full bg-black px-8 py-6 shadow-input dark:border-white/[0.2]"
+	class="relative flex justify-center space-x-40 px-8 py-6 shadow-input "
 >
 	<slot />
 </nav>
