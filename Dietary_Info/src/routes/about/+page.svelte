@@ -7,25 +7,12 @@
 </script>
 <title>About Us</title>
 <body>
-    <header>
-        <a href="/home">
-            <div class="w-full bg-secondary-dark pl-5 py-3">
-                <h1 class="text-primary-bright text-3xl">
-                    <b>PROJECT<br>OCTALNAUTS</b>
-                </h1>
-            </div>
-        </a>
-    </header>
     <main class="min-h-screen bg-primary-dark">
-        <div>
-            <a href="/dashboard" class="text-xl underline text-blue-600 visited:text-purple-700 text-primary-bright">Home</a>
-                <span class="text-xl text-primary-bright"> > About</span>
-        </div>
-        <div class="text-left py-8">
+        <div class="text-center py-8">
             <p class="text-4xl text-primary-bright"><b>About Us</b></p>
         </div>
         <div class='img-placeholder'>
-            <img src='/images/stock_food.jpg' alt='PETER'>
+            <img src='/images/stock_food.jpg' alt='PETER' class="w-full h-48 object-cover">
         </div>
         <div class="text-left">
                     <p class="text-sm text-primary-bright" style="text-indent: 2em;">We aim to help with fitness goals, dietary plans and many more Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores modi veniam perspiciatis dolores incidunt corporis pariatur molestiae tempora quasi? Ipsum, vel aperiam ullam culpa nesciunt fugit ab laborum accusamus sequi. Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia, cupiditate? Beatae dolorem rem voluptate rerum incidunt. Mollitia deserunt et nesciunt dolore, repellendus doloribus soluta neque ipsum voluptatem illo. Nemo, officiis! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nemo, accusamus nam repudiandae neque, vel molestiae, quaerat modi maxime fugiat debitis nesciunt ut iusto voluptatem tempora eum non voluptates quas vero?</p>
