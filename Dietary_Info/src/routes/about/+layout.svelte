@@ -19,12 +19,9 @@
 		<NavbarMenu>
 			<a href='/dashboard'><MenuItem {active} item="Dashboard">
 			</MenuItem></a>
-			<a href='/login'><MenuItem {active} item="Goals">
+			<a href='/add_restrictions'><MenuItem {active} item="Goals">
 			</MenuItem></a>
 			<a href='/login'><MenuItem {active} item="Account">
-				<!-- <div class="flex flex-col space-y-4 text-sm">
-					<HoveredLink href="#">Hobbies</HoveredLink>
-				</div> -->
 			</MenuItem></a>
 		</NavbarMenu>
 	</div>
