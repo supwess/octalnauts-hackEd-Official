@@ -41,6 +41,8 @@
 		"vite": "^7.3.1"
 	},
 	"dependencies": {
-		"@openfoodfacts/openfoodfacts-nodejs": "github:openfoodfacts/openfoodfacts-js"
+		"@openfoodfacts/openfoodfacts-nodejs": "github:openfoodfacts/openfoodfacts-js",
+		"better-sqlite3": "^12.6.2",
+		"vite-plugin-devtools-json": "^1.0.0"
 	}
 }
