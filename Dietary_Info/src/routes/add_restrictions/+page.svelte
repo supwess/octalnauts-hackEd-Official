@@ -42,6 +42,20 @@
                 </button>
             </div>
 
+            <br>
+                <div>
+                    <label><b>Daily Calorie Goal</b></label><br>
+                    <input type="text" placeholder="Enter calorie goal" name="allergy_name"
+                        class="w-full bg-secondary-dark rounded-lg outline-2 outline-secondary-light p-3 mt-2">
+                </div>
+            <br>
+
+            <div class="justify-end flex">
+                <button type="submit" class="w-2/5 text-primary-bright bg-secondary-dark rounded-xl p-2 hover:bg-secondary-light hover:cursor-pointer transition-all duration-150 mt-3" >
+                    Enter
+                </button>
+            </div>
+
         </form>
     </div>
 </div>
