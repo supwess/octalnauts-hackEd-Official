@@ -1,9 +1,8 @@
 <script lang="ts">
-	import "../../app.css"
-	import { NavbarMenu, HoveredLink, MenuItem, ProductItem } from '$lib/components/ui/NavbarMenu';
-
-	let {children} = $props(); 
+	import { NavbarMenu, MenuItem, ProductItem } from '$lib/components/ui/NavbarMenu';
 	let active: string | null = null;
+
+	let children = $props();
 
 	const menuItems: MenuItem[] = [
 		{ name: 'Account', href: '/account' },

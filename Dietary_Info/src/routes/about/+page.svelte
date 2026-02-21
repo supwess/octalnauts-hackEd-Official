@@ -1,0 +1,37 @@
+<script>
+	import { form } from "$app/server";
+
+    import "../../app.css"
+
+
+</script>
+<title>About Us</title>
+<body>
+    <main class="min-h-screen bg-primary-dark">
+        <div class="text-center py-8">
+            <p class="text-4xl text-primary-bright"><b>About Us</b></p>
+        </div>
+        <div class='img-placeholder'>
+            <img src='/images/stock_food.jpg' alt='PETER' class="w-full h-48 object-cover">
+        </div>
+       <div class="text-left px-6 py-4">
+    <p class="text-sm text-primary-bright leading-relaxed indent-8 max-w-4xl mx-auto">
+        We aim to help people achieve their dietary goals through thoughtful planning, healthy eating guidance, and simple tracking of daily food intake. Maintaining a balanced lifestyle can be challenging, especially with busy schedules, changing habits, and the abundance of food choices available today. Our goal is to provide support and structure so individuals can make better nutritional decisions without feeling overwhelmed. Whether someone is trying to manage weight, improve fitness performance, or simply develop healthier eating habits, small consistent steps can lead to meaningful long-term results. We believe that dieting should not feel restrictive or stressful, but rather empowering and sustainable. By helping users understand their eating patterns, plan meals wisely, and stay mindful of nutrition, we hope to encourage confidence in making food choices. Good health is not achieved overnight but through patience, discipline, and knowledge. Our mission is to guide people toward healthier living while respecting personal preferences and lifestyle needs.
+    </p>
+</div>
+        <!-- <ul>
+            <li class="text-sm text-primary-bright">Trackmaina: We have a pro gamer here and eats good food</li>
+            <li class="text-sm text-primary-bright">Bloons TD : We have a bloons gamer here</li>
+            <li class="text-sm text-primary-bright">Jason: We are jason.</li>
+            <li class="text-sm text-primary-bright">CS PRO: CS PRO here</li>
+            <li class="text-sm text-primary-bright">I did ONE commmit lol.</li>
+        </ul> -->
+    </main>
+    <footer>
+        <div class="w-full bg-secondary-dark pl-5 py-3"><span class="text-primary-bright text-3xl"><b>&#169; Copyright</b></span></div>
+    </footer>
+</body>
+
+<style>
+
+</style>
