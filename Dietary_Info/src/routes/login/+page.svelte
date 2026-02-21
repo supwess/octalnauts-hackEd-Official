@@ -9,6 +9,9 @@
 <title>Log In</title>
 
 <header>
+    <title>
+        Login
+    </title>
     <a href="/home">
         <div class="ml-0 mt-0 w-full h-1/15 bg-secondary-dark">
             <div class="bg-secondary-dark w-1/4 pl-5 pt-3 pb-3">
