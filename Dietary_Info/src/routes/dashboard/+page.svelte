@@ -1,9 +1,6 @@
 <script>
-	import { form } from "$app/server";
-
     import "../../app.css"
-
-
+    import { displayProduct } from "./page.js";
 </script>
 
 <header>
@@ -16,23 +13,17 @@
             </div>
         </div>
     </a>
-    
 </header>
 
+<br>
+
 <div>
-    <header class="top-bar">  
-        <div class="logo">
-            LOGO
-        </div>
-        <div class="welcome-message">
-            Welcome Back!
-        </div>
-    </header>
+    <input type="text" id="barcode" class="outline-1">
+    <button id="submitBtn" class="outline-1" on:click={displayProduct}>submit</button>
 </div>
 
-<style>
+<br>
 
-.top-bar {
-    color: #ffff;
-}
-</style>
+<div>
+    <pre id="output"></pre>
+</div>

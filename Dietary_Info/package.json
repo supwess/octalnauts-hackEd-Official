@@ -41,6 +41,6 @@
 		"vite": "^7.3.1"
 	},
 	"dependencies": {
-		"@openfoodfacts/openfoodfacts-nodejs": "github:openfoodfacts/openfoodfacts-js"
+		"@openfoodfacts/openfoodfacts-nodejs": "^2.0.0-alpha.29"
 	}
 }
