@@ -10,23 +10,12 @@
     }
 </script>
 
-<div class="min-h-screen flex flex-col">
-    <header>
-        <title>
-            Home
-        </title>
-        <a href="/home">
-            <div class="ml-0 mt-0 w-full h-1/15 bg-secondary-dark">
-                <div class="bg-secondary-dark w-1/4 pl-5 pt-3 pb-3">
-                    <h1 class="text-primary-bright text-3xl">
-                        <b>PROJECT<br>OCTALNAUTS</b>
-                    </h1>
-                </div>
-            </div>
-        </a>
-    </header>
+<title>
+    Home
+</title>
 
-    <main class="overflow-hidden bg-primary-dark flex-1">
+<div class="h-full flex flex-col">
+    <main class="overflow-hidden bg-primary-dark flex-1 h-14/15">
         <div class="text-center py-8">
             <h1 class="text-[6rem] text-primary-bright"><b>Dietary Info</b></h1>
         </div>
@@ -37,10 +26,10 @@
         <div class="pt-10">
             <div class="flex items-center justify-center gap-10 mt-10">
                 <div>
-                    <button class="rounded-2xl gimages w-40 h-40 bg-cover" on:click={goGuestPage}></button>
+                    <button class="rounded-2xl w-40 h-40 loginB bg-cover" on:click={goLoginPage} aria-label="Login Page Button"></button>
                 </div>
                 <div>
-                    <button class="rounded-2xl w-40 h-40 loginB bg-cover" on:click={goLoginPage}></button>
+                    <button class="rounded-2xl gimages w-40 h-40 bg-cover" on:click={goGuestPage} aria-label="Guest Page Button"></button>
                 </div>
             </div>
         </div>
