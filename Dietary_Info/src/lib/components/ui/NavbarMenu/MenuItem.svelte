@@ -14,7 +14,7 @@
 	export let item: string;
 </script>
 
-<div on:mouseenter={() => (active = item)} on:mouseleave={() => (active = null)} class="relative">
+<div class="relative">
 	<Motion let:motion transition={{ duration: 0.3 }}>
 		<p use:motion class="cursor-pointer text-black hover:opacity-[0.9] dark:text-white">
 			{item}
@@ -33,10 +33,10 @@
 						<Motion let:motion {transition} layoutId="active">
 							<div
 								use:motion
-								class="overflow-hidden rounded-2xl border border-black/[0.2] bg-white shadow-xl backdrop-blur-sm dark:border-white/[0.2] dark:bg-black"
+								class="overflow-hidden shadow-xl backdrop-blur-sm"
 							>
 								<Motion let:motion layout>
-									<div use:motion class="h-full w-max p-4">
+									<div use:motion class="h-full p-4">
 										<slot />
 									</div>
 								</Motion>

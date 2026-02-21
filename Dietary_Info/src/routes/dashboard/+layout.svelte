@@ -1,60 +1,29 @@
 <script lang="ts">
+	import "../../app.css"
 	import { NavbarMenu, HoveredLink, MenuItem, ProductItem } from '$lib/components/ui/NavbarMenu';
+
+	let {children} = $props(); 
 	let active: string | null = null;
+
+	const menuItems: MenuItem[] = [
+		{ name: 'Account', href: '/account' },
+		{ name: 'Home', href: '/home' },
+		{ name: 'Goals', href: '/goals' },
+		{ name: 'About', href: '/about' }
+	];
+
 </script>
 
-<main class="pb-24">
-  <slot />
-</main>
-
-<div class="relative flex w-full items-center justify-center">
-	<div class={'fixed inset-x-0 bottom-8 z-50 mx-auto max-w-2xl'}>
-		<NavbarMenu>
-			<MenuItem {active} item="Account">
-				<div class="flex flex-col space-y-4 text-sm">
-					<HoveredLink href="#">Web Development</HoveredLink>
-					<HoveredLink href="#">Interface Design</HoveredLink>
-					<HoveredLink href="#">Search Engine Optimization</HoveredLink>
-					<HoveredLink href="#">Branding</HoveredLink>
+<section class="relative flex w-full justify-evenly">
+	<div class='fixed inset-x-0 bottom-8 w-[50%] bg-transparent-primary shadow-lg rounded-4xl border border-primary-light text-primary-bright overflow-hidden h-[7%] m-auto flex flex-row items-center justify-evenly'>
+		{#each menuItems as menuItem}
+			<a href={menuItem.href}>
+				<div class="flex-1 text-center">
+					{menuItem.name}
 				</div>
-			</MenuItem>
-			<MenuItem {active} item="Home">
-				<div class="  grid grid-cols-2 gap-10 p-4 text-sm">
-					<ProductItem
-						title="Algochurn"
-						href="#"
-						src="https://images.pexels.com/photos/1031659/pexels-photo-1031659.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
-						description="Prepare for tech interviews like never before."
-					/>
-					<ProductItem
-						title="Tailwind Master Kit"
-						href="#"
-						src="https://images.pexels.com/photos/733071/pexels-photo-733071.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
-						description="Production ready Tailwind css components for your next project"
-					/>
-					<ProductItem
-						title="Moonbeam"
-						href="#"
-						src="https://images.pexels.com/photos/730424/pexels-photo-730424.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
-						description="Never write from scratch again. Go from idea to blog in minutes."
-					/>
-					<ProductItem
-						title="Rogue"
-						href="#"
-						src="https://images.pexels.com/photos/745243/pexels-photo-745243.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
-						description="Respond to government RFPs, RFIs and RFQs 10x faster using AI"
-					/>
-				</div>
-			</MenuItem>
-			<MenuItem {active} item="Goals">
-				<div class="flex flex-col space-y-4 text-sm">
-					<HoveredLink href="#">Hobby</HoveredLink>
-					<HoveredLink href="#">Individual</HoveredLink>
-					<HoveredLink href="#">Team</HoveredLink>
-					<HoveredLink href="#">Enterprise</HoveredLink>
-				</div>
-			</MenuItem>
-		</NavbarMenu>
+			</a>
+		{/each}
 	</div>
-	<p class="text-black dark:text-white">The Navbar will show on top of the page</p>
-</div>
+</section>
+
+{@render children()}

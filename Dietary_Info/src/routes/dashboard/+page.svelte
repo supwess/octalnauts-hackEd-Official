@@ -1,5 +1,6 @@
 <script>
 	import { form } from "$app/server";
+    
     import "../../app.css"
 </script>
 
@@ -7,6 +8,8 @@
     Dashboard
 </title>
 
-<body>
-    <h1 class="font-roboto text-center text-6xl">Welcome Back!</h1>    
+<body class="bg-primary-dark mb-0 h-fit">
+    <div class="flex flex-col items-center h-svh m-15 mb-0">
+        <h1 class="text-primary-bright text-4xl">Welcome Back!</h1>
+    </div>
 </body>
