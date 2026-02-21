@@ -37,10 +37,10 @@
         <div class="pt-10">
             <div class="flex items-center justify-center gap-10 mt-10">
                 <div>
-                    <button class="rounded-2xl gimages w-40 h-40 bg-cover" on:click={goGuestPage}></button>
+                    <button class="rounded-2xl w-40 h-40 loginB bg-cover" on:click={goLoginPage}></button>
                 </div>
                 <div>
-                    <button class="rounded-2xl w-40 h-40 loginB bg-cover" on:click={goLoginPage}></button>
+                    <button class="rounded-2xl gimages w-40 h-40 bg-cover" on:click={goGuestPage}></button>
                 </div>
             </div>
         </div>

@@ -1,9 +1,6 @@
 <script>
-	import { form } from "$app/server";
-
+	export let form;
     import "../../app.css"
-
-
 </script>
 
 <title>Log In</title>
@@ -49,6 +46,9 @@
 
             <br>
 
+            {#if form?.error}
+                <p class="text-pink-600 text-center">{form.error}</p>
+            {/if}
             <div class="justify-end flex">
                 <button type="submit" class="w-2/5 text-primary-bright bg-secondary-dark rounded-xl p-2 hover:bg-secondary-light hover:cursor-pointer transition-all duration-150 mt-3" >
                     Login
