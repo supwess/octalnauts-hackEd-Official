@@ -1,10 +1,5 @@
-<script lang="ts">
-	import { NavbarMenu, MenuItem, ProductItem } from '$lib/components/ui/NavbarMenu';
-	let active: string | null = null;
-
-	let children = $props();
-
-	const menuItems: MenuItem[] = [
+<script>
+	const menuItems = [
 		{ name: 'Account', href: '/account' },
 		{ name: 'Home', href: '/home' },
 		{ name: 'Goals', href: '/goals' },
@@ -25,4 +20,4 @@
 	</div>
 </section>
 
-{@render children()}
+<slot />
