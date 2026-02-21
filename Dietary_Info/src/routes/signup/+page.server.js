@@ -21,6 +21,6 @@ export const actions = {
 
         database.prepare("INSERT INTO Users (username, email, password) VALUES (?, ?, ? )").run(username, email, password);
 
-        redirect(302, "/dashboard");
+        redirect(302, "/login");
     }
 }

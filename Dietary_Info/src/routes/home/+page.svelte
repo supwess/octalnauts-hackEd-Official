@@ -25,10 +25,11 @@
                     <button class="rounded-2xl w-40 h-40 loginB bg-cover" on:click={goLoginPage} aria-label="Login Page Button"></button>
                 </div>
                 <div>
-                    <button class="rounded-2xl gimages w-40 h-40 bg-cover" on:click={goGuestPage} aria-label="Guest Page Button"></button>
+                    <button class="rounded-2xl gimages w-40 h-40 bg-cover" aria-label="Guest Page Button"></button>
                 </div>
             </div>
         </div>
+        <p class="text-left pl-196 text-primary-light mt-2 text-sm">Guest Option Coming Soon</p>
     </main>
 </div>
 
