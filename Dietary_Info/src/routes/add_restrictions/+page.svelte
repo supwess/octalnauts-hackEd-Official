@@ -4,6 +4,10 @@
 
 <div class="bg-primary-dark h-fit overflow-hidden">
     <div class="flex justify-center items-center h-svh">
+
+    <a href="/dashboard" class="absolute top-30 left-8 text-lg text-primary-bright bg-secondary-dark rounded-xl p-7 hover:bg-secondary-light hover:cursor-pointer transition-all duration-150 mt-3">
+        Back to Dashboard
+    </a>
         <form method="POST" class="w-2/3 text-primary-bright">
             <div>
                 <h1 class="text-center text-4xl"><b>Enter Dietary Restrictions</b></h1>
