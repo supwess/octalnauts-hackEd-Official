@@ -13,10 +13,10 @@
     }
 
 	const menuItems = [
-		{ name: 'Account', href: '/account' },
-		{ name: 'Home', href: '/home' },
-		{ name: 'Goals', href: '/goals' },
-		{ name: 'About', href: '/about' }
+		{ name: 'Add Restrictions', href: '/add_restrictions' },
+		{ name: 'Home', href: '/dashboard' },
+		{ name: 'About', href: '/about' },
+		{ name: 'Logout', href: '/home' },
 	];
 </script>
 
