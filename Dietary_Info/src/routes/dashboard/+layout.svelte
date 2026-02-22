@@ -1,9 +1,9 @@
 <script>
 	const menuItems = [
 		{ name: 'Home', href: '/dashboard' },
-		{ name: 'Add Restrictions', href: '/add_restrictions' },
-		{ name: 'Search', href: '/search' },
-		{ name: 'About', href: '/about' },
+		{ name: 'Add Restrictions', href: '/dashboard/add_restrictions' },
+		{ name: 'Search', href: '/dashboard/search' },
+		{ name: 'About', href: '/dashboard/about' },
 		{ name: 'Logout', href: '/home' }
 	];
 

@@ -1,7 +1,7 @@
 <script>
 // @ts-nocheck
 
-    import "../../app.css";
+    import "../../../app.css";
     import { OpenFoodFacts } from "@openfoodfacts/openfoodfacts-nodejs"
 
     const client = new OpenFoodFacts(globalThis.fetch);
