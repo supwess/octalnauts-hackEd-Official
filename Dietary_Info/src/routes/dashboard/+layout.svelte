@@ -1,10 +1,12 @@
 <script>
 	const menuItems = [
-		{ name: 'Account', href: '/account' },
-		{ name: 'Goals', href: '/goals' },
+		{ name: 'Add Restrictions', href: '/add_restrictions' },
+		{ name: 'Home', href: '/dashboard' },
 		{ name: 'About', href: '/about' },
 		{ name: 'Logout', href: '/home' },
 	];
+
+	let {children} = $props();
 
 </script>
 
@@ -20,4 +22,4 @@
 	</div>
 </section>
 
-<slot />
+{@render children()}
