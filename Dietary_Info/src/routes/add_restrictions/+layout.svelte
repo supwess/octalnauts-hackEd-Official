@@ -4,11 +4,12 @@
 
 	let { children } = $props();
 
-	const menuItems: MenuItem[] = [
-		{ name: 'Dashboard', href: '/dashboard' },
-		{ name: 'Home', href: '/home' },
+	const menuItems = [
+		{ name: 'Home', href: '/dashboard' },
+		{ name: 'Add Restrictions', href: '/add_restrictions' },
+		{ name: 'Search', href: '/search' },
 		{ name: 'About', href: '/about' },
-		{ name: 'Account', href: '/login' }
+		{ name: 'Logout', href: '/home' }
 	];
 
 </script>
