@@ -1,5 +1,5 @@
 <script lang="ts">
-	import { NavbarMenu, HoveredLink, MenuItem, ProductItem } from '$lib/components/ui/NavbarMenu';
+	import { NavbarMenu, MenuItem, ProductItem } from '$lib/components/ui/NavbarMenu';
 	let active: string | null = null;
 
 	let { children } = $props();
@@ -19,6 +19,7 @@
 		{ name: 'About', href: '/about' },
 		{ name: 'Logout', href: '/home' }
 	];
+
 </script>
 
 <section class="relative flex w-full justify-evenly">
