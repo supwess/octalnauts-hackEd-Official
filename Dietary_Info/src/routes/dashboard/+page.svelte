@@ -15,33 +15,34 @@
     Dashboard
 </title>
 
-<div>
+<div class="bg-primary-dark">
     <h1 class="font-roboto text-center text-6xl text-white">Welcome Back!</h1>
 </div>
-
-<div class="flex flex-col items-left pl-50 pt-20 gap-2">
-    <h1 class="font-roboto text-align text-white">Caloric Goal</h1>
-    <svg width={size} height={size} viewBox="0 0 {size} {size}">
-        <circle
-        cx={size/2} cy={size/2} r={r}
-        fill="none" stroke="#333" stroke-width={thickness}
-        />
-        <circle
-        cx={size/2} cy={size/2} r={r}
-        fill="none"
-        stroke={color}
-        stroke-width={thickness}
-        stroke-linecap="round"
-        stroke-dasharray={circumference}
-        stroke-dashoffset={offset}
-        transform="rotate(-90 {size/2} {size/2})"
-        style="transition: stroke-dashoffset 0.5s ease"
-        />
-        <text x={size/2} y={size/2 + 6} text-anchor="middle" fill="white" font-size={size * 0.18}>
-        {progress}%
-        </text>
-    </svg>
-    {#if label}
-        <span class="text-white text-sm">{label}</span>
-    {/if}
+<div class="flex flex-col bg-primary-dark min-h-screen">
+    <div class="flex flex-col items-left pl-50 pt-20 gap-2 bg-primary-dark">
+        <h1 class="font-roboto text-align text-white">Caloric Goal</h1>
+        <svg width={size} height={size} viewBox="0 0 {size} {size}">
+            <circle
+            cx={size/2} cy={size/2} r={r}
+            fill="none" stroke="#333" stroke-width={thickness}
+            />
+            <circle
+            cx={size/2} cy={size/2} r={r}
+            fill="none"
+            stroke={color}
+            stroke-width={thickness}
+            stroke-linecap="round"
+            stroke-dasharray={circumference}
+            stroke-dashoffset={offset}
+            transform="rotate(-90 {size/2} {size/2})"
+            style="transition: stroke-dashoffset 0.5s ease"
+            />
+            <text x={size/2} y={size/2 + 6} text-anchor="middle" fill="white" font-size={size * 0.18}>
+            {progress}%
+            </text>
+        </svg>
+        {#if label}
+            <span class="text-white text-sm">{label}</span>
+        {/if}
+    </div>
 </div>
