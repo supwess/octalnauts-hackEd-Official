@@ -13,13 +13,11 @@
 <title>
     Dashboard
 </title>
-
-<br>
-
-<div>
-    <h1 class="font-roboto text-center text-6xl text-white">Welcome Back!</h1>
-</div>
 <div class="flex flex-col bg-primary-dark min-h-screen">
+    <div>
+        <h1 class="font-roboto text-center text-6xl text-white">Welcome Back!</h1>
+    </div>
+    
     <div class="flex flex-col items-left pl-50 pt-20 gap-2 bg-primary-dark">
         <h1 class="font-roboto text-align text-white">Caloric Goal</h1>
         <svg width={size} height={size} viewBox="0 0 {size} {size}">
