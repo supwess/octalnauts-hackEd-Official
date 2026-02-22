@@ -2,6 +2,7 @@
 	const menuItems = [
 		{ name: 'Home', href: '/dashboard' },
 		{ name: 'Add Restrictions', href: '/add_restrictions' },
+		{ name: 'Search', href: '/search' },
 		{ name: 'About', href: '/about' },
 		{ name: 'Logout', href: '/home' }
 	];
