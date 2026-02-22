@@ -1,7 +1,9 @@
 <script>
 	export let form;
     import "../../app.css"
+    import { resolve } from '$app/paths';
 </script>
+
 <div class="bg-primary-dark h-fit overflow-hidden">
     <div class="flex justify-center items-center h-svh">
         <form method="POST" class="w-2/3 text-primary-bright">
@@ -47,7 +49,7 @@
             <br>
 
             <div>
-                <p class="text-center">Already have an account? <a href="../login" class="text-blue-500 hover:text-blue-600 transition-all duration-150">Log in</a></p>
+                <p class="text-center">Already have an account? <a href={resolve('/login')} class="text-blue-500 hover:text-blue-600 transition-all duration-150">Log in</a></p>
             </div>
         </form>
     </div>
