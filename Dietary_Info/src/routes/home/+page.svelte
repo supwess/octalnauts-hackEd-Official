@@ -10,8 +10,12 @@
     }
 </script>
 
-<div class="min-h-screen flex flex-col bg-primary-dark">
-    <main class="overflow-hidden bg-primary-dark flex-1 h-14/15">
+<title>
+    Home
+</title>
+
+<div class="flex flex-col bg-primary-dark min-h-screen">
+    <main class="overflow-hidden bg-primary-dark flex-1">
         <div class="text-center py-8">
             <h1 class="text-[6rem] text-primary-bright"><b>Dietary Info</b></h1>
         </div>
@@ -25,10 +29,11 @@
                     <button class="rounded-2xl w-40 h-40 loginB bg-cover" on:click={goLoginPage} aria-label="Login Page Button"></button>
                 </div>
                 <div>
-                    <button class="rounded-2xl gimages w-40 h-40 bg-cover" on:click={goGuestPage} aria-label="Guest Page Button"></button>
+                    <button class="rounded-2xl gimages w-40 h-40 bg-cover" aria-label="Guest Page Button"></button>
                 </div>
             </div>
         </div>
+        <p class="text-left pl-196 text-primary-light mt-2 text-sm">Guest Option Coming Soon</p>
     </main>
 </div>
 

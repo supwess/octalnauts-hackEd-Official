@@ -6,4 +6,10 @@
     --color-secondary-light: #415a77;
     --color-secondary-dark: #1b263b;
     --color-primary-dark: #0d1b2a;
+    --color-transparent-primary: rgba(247, 247, 255, 0.15);
+}
+
+body {
+    margin: 0;
+    padding: 0;
 }
