@@ -11,8 +11,7 @@
         const { data, error } = await client.getProductV3(barcode);
         if (!data) {
             console.log(error);
-            window.alert(`Error fetching product: ${error}`);
-            document.getElementById("brand").textContent = `Error fetching product: ${error}`;
+            document.getElementById("brand").textContent = `Invalid Item Please Input Again`;
             return;
         }
         console.log(typeof data);
