@@ -19,7 +19,7 @@
 </div>
 
 <div class="flex flex-col items-left pl-50 pt-20 gap-2">
-    <h1 class="font-roboto text-align text-white">Caloric Goal</h1>
+    <h1 class="font-roboto text-align text-black">Caloric Goal</h1>
     <svg width={size} height={size} viewBox="0 0 {size} {size}">
         <circle
         cx={size/2} cy={size/2} r={r}
@@ -41,6 +41,6 @@
         </text>
     </svg>
     {#if label}
-        <span class="text-white text-sm">{label}</span>
+        <span class="text-black text-sm">{label}</span>
     {/if}
 </div>
