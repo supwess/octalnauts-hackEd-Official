@@ -1,0 +1,24 @@
+{
+	"navSites": [
+		{
+			"name": "Home",
+			"link": "/dashboard"
+		},
+		{
+			"name": "Add Restrictions",
+			"link": "/dashboard/add_restrictions"
+		},
+		{
+			"name": "Search",
+			"link": "/dashboard/search"
+		},
+		{
+			"name": "About",
+			"link": "/dashboard/about"
+		},
+		{
+			"name": "Logout",
+			"link": "/home"
+		}
+		]
+}

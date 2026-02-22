@@ -1,15 +1,39 @@
 <script lang="ts">
-    export let progress = 50;
-    export let label = "";
-    export let color = "#3b82f6";
-    export let size = 200;
-    export let thickness = 8;
+    import { page } from '$app/state';
+
+    let progress = 50;
+    let label = "";
+    let color = "#3b82f6";
+    let size = 200;
+    let thickness = 8;
 
     let shouldDisplay = false;
 
     const r = (size / 2) - thickness;
     const circumference = 2 * Math.PI * r;
-    $: offset = circumference - (progress / 100) * circumference;
+    let offset = $derived(circumference - (progress / 100) * circumference);
+
+    const data = page.data;
+
+    const url = data?.url;
+    const menuItems = data?.navSites ?? [];
+
+    const activeIndex = menuItems.findIndex(item =>
+        url.pathname === item.link ||
+        url.pathname.startsWith(item.link + "/")
+    );
+
+    let hoveredIndex = null;
+
+    function setHover(i) {
+        hoveredIndex = i;
+    }
+
+    function clearHover() {
+        hoveredIndex = null;
+    }
+
+    const pillIndex = hoveredIndex ?? activeIndex;
 </script>
 
 <title>
@@ -47,4 +71,36 @@
         {/if}
     </div>
     {/if}
+
+
+    <!-- NAVBAR -->
+
+    <div class="flex flex-col items-center justify-center text-primary-bright">
+        <div
+                class="fixed bottom-8 mx-auto w-[60%] h-[7%]
+               bg-transparent-primary shadow-lg rounded-4xl border border-primary-light
+               flex flex-row items-center justify-evenly
+               overflow-hidden"
+        >
+            <div
+                    class="absolute top-1/2 -translate-y-1/2 h-10 bg-white/20 rounded-2xl transition-all duration-300"
+                    style="
+                width: calc(100% / {menuItems.length});
+                left: calc((100% / {menuItems.length}) * {pillIndex});
+            "
+            ></div>
+
+            {#each menuItems as menuItem, i}
+                <a
+                        href={menuItem.link}
+                        data-sveltekit-preload-data
+                        class="flex-1 text-center relative z-10 py-2"
+                        onmouseenter={() => setHover(i)}
+                        onmouseleave={clearHover}
+                >
+                    {menuItem.name}
+                </a>
+            {/each}
+        </div>
+    </div>
 </div>
