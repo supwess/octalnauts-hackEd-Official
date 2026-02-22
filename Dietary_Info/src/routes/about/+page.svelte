@@ -1,6 +1,4 @@
 <script>
-	import { form } from "$app/server";
-
     import "../../app.css"
 
 </script>

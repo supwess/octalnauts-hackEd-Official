@@ -25,4 +25,4 @@
 	</div>
 </section>
 
-{@render children()}
+<slot />
