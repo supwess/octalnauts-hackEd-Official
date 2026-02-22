@@ -6,6 +6,8 @@
 		{ name: 'Logout', href: '/home' },
 	];
 
+	let {children} = $props();
+
 </script>
 
 <section class="relative flex w-full justify-evenly">
@@ -20,4 +22,4 @@
 	</div>
 </section>
 
-<slot />
+{@render children()}
