@@ -1,5 +1,4 @@
 <script lang="ts">
-    import { Progressradial } from "flowbite-svelte";
     export let progress = 25;
     export let label = "";
     export let color = "#3b82f6";
