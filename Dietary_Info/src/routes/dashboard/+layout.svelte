@@ -1,9 +1,9 @@
 <script>
 	const menuItems = [
-		{ name: 'Add Restrictions', href: '/add_restrictions' },
 		{ name: 'Home', href: '/dashboard' },
+		{ name: 'Add Restrictions', href: '/add_restrictions' },
 		{ name: 'About', href: '/about' },
-		{ name: 'Logout', href: '/home' },
+		{ name: 'Logout', href: '/home' }
 	];
 
 	let {children} = $props();
