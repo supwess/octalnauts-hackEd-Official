@@ -4,11 +4,19 @@
 
 	let { children } = $props();
 
-	const menuItems: MenuItem[] = [
-		{ name: 'Dashboard', href: '/dashboard' },
-		{ name: 'Home', href: '/home' },
-		{ name: 'Goals', href: '/add_restrictions' },
-		{ name: 'Account', href: '/login' }
+	function godashboard() {
+        window.location.href = '/dashboard';
+    }
+
+    function gologoutPage() {
+        window.location.href = '/login';
+    }
+
+	const menuItems = [
+		{ name: 'Home', href: '/dashboard' },
+		{ name: 'Add Restrictions', href: '/add_restrictions' },
+		{ name: 'About', href: '/about' },
+		{ name: 'Logout', href: '/home' }
 	];
 
 </script>
